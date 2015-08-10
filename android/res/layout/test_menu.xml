@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <Button
+        android:id="@+id/test_gpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/test_pwm1"
+        android:layout_alignRight="@+id/test_pwm1"
+        android:layout_marginTop="35dp"
+        android:text="@string/test_b1" />
+
+    <Button
+        android:id="@+id/test_adc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/test_pwm1"
+        android:layout_alignRight="@+id/test_pwm1"
+        android:layout_marginTop="135dp"
+        android:text="@string/test_b2" />
+
+    <Button
+        android:id="@+id/test_pwm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="235dp"
+        android:text="@string/test_b3" />
+
+    <Button
+        android:id="@+id/test_gpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/test_gpi"
+        android:layout_marginLeft="300dp"
+        android:text="@string/test_b4" />
+
+    <TextView
+        android:id="@+id/test_gpi_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/test_gpi"
+        android:layout_alignBottom="@+id/test_gpi"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/test_pwm1"
+        android:maxLength="10"
+        android:text="GPI VALUE"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/test_adc_value"
+        style="@style/styleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/test_adc"
+        android:layout_alignBottom="@+id/test_adc"
+        android:layout_alignLeft="@+id/test_gpi_value"
+        android:text="ADC VALUE" />
+
+    <EditText
+        android:id="@+id/test_gpo_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/test_gpi_value"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/test_gpo"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/test_pwm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_alignBottom="@+id/test_pwm1_value"
+        android:text="@string/test_b5" />
+
+    <EditText
+        android:id="@+id/test_pwm1_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/test_pwm1"
+        android:layout_alignBottom="@+id/test_pwm1"
+        android:layout_alignLeft="@+id/test_adc_value"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:width="100dp" />
+
+    <EditText
+        android:id="@+id/test_pwm2_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/test_pwm2"
+        android:layout_alignBottom="@+id/test_pwm2"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/test_pwm2"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:width="100dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/dro_pw_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/test_pwm1"
+        android:layout_below="@+id/test_pwm1"
+        android:layout_marginTop="36dp"
+        android:text="PIC device" />
+
+</RelativeLayout>

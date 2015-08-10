@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Apsu</string>
+    <string name="test_b1">GPI</string>
+    <string name="test_b2">ADC</string>
+    <string name="test_b3">PWM1</string>
+    <string name="test_b4">GPO</string>
+    <string name="test_b5">PWM2</string>
+    <string name="load">Load</string>
+    <string name="hold">Hold</string>
+    <string name="test">Test</string>
+    <string name="volts">Volt</string>
+    <string name="amp">Amp</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="text">Some Text</string>
+    <string name="power">Pow</string>
+    <string name="stop">STOP</string>
+    <color name="full_red">#FF0000</color>
+    <color name="half_red">#800000</color>
+    <color name="dark_orange">#E47300</color>
+    <color name="full_orange">#FF8000</color>
+    <color name="full_blue">#0000ff</color>
+    <color name="half_blue">#000080</color>
+    <string name="input_set">Set</string>
+
+</resources>

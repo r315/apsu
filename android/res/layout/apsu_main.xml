@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/dro"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dro_volt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="150sp"
+            android:text="@string/volts"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#27A3D2"
+            android:textSize="140sp" />
+
+        <TextView
+            android:id="@+id/dro_amp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="150sp"
+            android:text="@string/amp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#27A3D2"
+            android:textSize="140sp" />
+
+        <TextView
+            android:id="@+id/dro_pw_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="150sp"
+            android:text="@string/power"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#27A3D2"
+            android:textSize="140sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/menu_load"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/load"
+            android:textOff="@string/load"
+            android:textOn="@string/load" />
+
+        <Button
+            android:id="@+id/menu_test_hw"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/test" />
+
+        <ToggleButton
+            android:id="@+id/menu_hold"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/hold"
+            android:textOff="Hold"
+            android:textOn="Hold" />
+
+        <Button
+            android:id="@+id/menu_f2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="F2" />
+
+        <Button
+            android:id="@+id/menu_f3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="F3" />
+
+        <Button
+            android:id="@+id/menu_emergency"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/red_button"
+            android:text="@string/stop" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/control"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/Grafic2"
+        android:layout_alignTop="@+id/menu"
+        android:layout_marginRight="20dp"
+        android:background="#282828" >
+
+         <LinearLayout
+            android:id="@+id/volt_cur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+        
+        <ToggleButton
+            android:id="@+id/control_volt_active"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/volts"
+            android:textOff="@string/volts"
+            android:textOn="@string/volts" />
+        
+        <ToggleButton
+            android:id="@+id/control_cur_active"
+            android:layout_width="70dp"
+            android:layout_height="70dp"           
+            android:text="@string/amp"
+            android:textOff="@string/amp"
+            android:textOn="@string/amp" />
+		</LinearLayout>
+		
+        <LinearLayout
+            android:id="@+id/user_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/ui_increase"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/ui_decrease"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="@string/minus" />
+        </LinearLayout>
+
+        
+
+    </RelativeLayout>    
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/Grafic2"
+        android:layout_marginBottom="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+       
+        android:layout_below="@+id/control"
+        android:background="#282828" >     
+
+        <TextView
+            android:id="@+id/info_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/cut_voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/info_time"
+            android:text="@string/text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/target_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cut_voltage"
+            android:text="@string/text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/input_set"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/input_set" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+             android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/input_set"            
+            android:text="Start" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/Grafic1"
+        android:layout_width="3dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/control"
+        android:layout_marginRight="20sp"
+        android:background="#27A3D2"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/Grafic2"
+        android:layout_width="3dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/menu"
+         android:layout_marginRight="20sp"
+        android:background="#27A3D2"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+    
+</RelativeLayout>
